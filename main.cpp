@@ -56,8 +56,8 @@ int main(){
 
 	// Display the output
 	cout << "Index\t" << left << left <<setw (70) << "Book Title" << "onH\n";
-	cout << "[" << minIndex<< "]\t" << left << setw (70) << format( "{}", bookTitle [minIndex]) << minQuantity << endl;
-	cout << "[" << maxIndex<< "]\t" << left << setw (70) << format( "{}", bookTitle [maxIndex]) << maxQuantity << endl;
+	cout << "[" << minIndex<< "]\t" << left << setw (70) << bookTitle [minIndex] << minQuantity << endl;
+	cout << "[" << maxIndex<< "]\t" << left << setw (70) << bookTitle [maxIndex] << maxQuantity << endl;
 	
 	return 0;
 }
