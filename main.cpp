@@ -24,7 +24,7 @@ int main(){
 										"The Lord of the Rings: 50th Anniversary, One Vol. Edition", "The Two Towers", "The Return of the King",
 										"The Fellowship of the Ring", "C++ Programming: From Problem Analysis to Program Design 7th Edition",
 										"Digital Computer Electronics", "Assembly Language for x86 Processors (7th Edition)"};
-	int onHand [20] = {17,3,6,0,19,7,18,15,5,4,7,14,18,12,12,3,5,19,16,15};
+	array <int, 20 > onHand {17,3,6,0,19,7,18,15,5,4,7,14,18,12,12,3,5,19,16,15};
 	
 	int maxQuantity;
 	int minQuantity;
