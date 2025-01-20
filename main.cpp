@@ -28,7 +28,7 @@ int main(){
 								{"The Fellowship of the Ring"}, {"C++ Programming: From Problem Analysis to Program Design 7th Edition"},
 								{"Digital Computer Electronics"}, {"Assembly Language for x86 Processors (7th Edition)"}
 								}};
-	array <int, 20 > onHand {17,3,6,0,19,7,18,15,5,4,7,14,18,12,12,3,5,19,16,15};
+	array < size_t, 20 > onHand {17,3,6,0,19,7,18,15,5,4,7,14,18,12,12,3,5,19,16,15};
 	
 	int maxQuantity;
 	int minQuantity;
