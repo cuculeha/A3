@@ -6,7 +6,6 @@
 #include <iostream>
 #include <iomanip>
 #include <array>
-#include <format>
 
 using namespace std;
 
@@ -30,8 +29,8 @@ int main(){
 								}};
 	array < size_t, 20 > onHand {17,3,6,0,19,7,18,15,5,4,7,14,18,12,12,3,5,19,16,15};
 	
-	int maxQuantity;
-	int minQuantity;
+	size_t maxQuantity;
+	size_t minQuantity;
 	int maxIndex;
 	int minIndex;
 	
@@ -57,8 +56,8 @@ int main(){
 
 	// Display the output
 	cout << "Index\t" << left << left <<setw (70) << "Book Title" << "onH\n";
-	cout << "[" << minIndex<< "]\t" << left << setw (70) << format( {}, bookTitle [minIndex]) << minQuantity << endl;
-	cout << "[" << maxIndex<< "]\t" << left << setw (70) << format( {}, bookTitle [maxIndex]) << maxQuantity << endl;
+	cout << "[" << minIndex<< "]\t" << left << setw (70) << format( "{}", bookTitle [minIndex]) << minQuantity << endl;
+	cout << "[" << maxIndex<< "]\t" << left << setw (70) << format( "{}", bookTitle [maxIndex]) << maxQuantity << endl;
 	
 	return 0;
 }
