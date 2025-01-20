@@ -30,8 +30,8 @@ int main(){
 	
 	size_t maxQuantity;
 	size_t minQuantity;
-	string bookWithMaxQuantity;
-	string bookWithMinQuantity;
+	int maxIndex;
+	int minIndex;
 	
 	maxQuantity = onHand[0];
 	minQuantity = onHand [0];
@@ -40,23 +40,24 @@ int main(){
     {
       if (onHand[i] > maxQuantity)
       {
-      	bookWithMaxQuantity = i;
       	maxQuantity = onHand[i];
-	  }
+	maxIndex = i;
+	      
+      }
 	  
-	  else if (onHand[i] < minQuantity)
-	  {
-	  	bookWithMinQuantity = i;
-	  	minQuantity = onHand[i];
-	  }
+      else if (onHand[i] < minQuantity)
+      {
+	minQuantity = onHand[i];
+	minIndex = i;
+      }
 	  
     }
 
 
 	// Display the output
 	cout << "Index\t" << left << left <<setw (70) << "Book Title" << "onH\n";
-	cout << "[" << bookWithMinQuantity<< "]\t" << left << setw (70) << format( "{}", bookTitle [bookWithMinQuantity]) << minQuantity << endl;
-	cout << "[" << bookWithMaxQuantity<< "]\t" << left << setw (70) << format( "{}", bookTitle [bookWithMaxQuantity]) << maxQuantity << endl;
+	cout << "[" << minIndex<< "]\t" << left << setw (70) << format( "{}", bookTitle [minIndex]) << minQuantity << endl;
+	cout << "[" << maxIndex<< "]\t" << left << setw (70) << format( "{}", bookTitle [maxIndex]) << maxQuantity << endl;
 	
 	return 0;
 }
